@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Overview | PatientCare</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"><script src="js/app.js" defer></script>
+</head><body>
+<div class="app-shell">
+<aside class="sidebar">
+<a class="brand" href="index.html"><span class="brand-mark">✚</span><span>Patient<span class="brand-accent">Care</span><small>CARE MANAGEMENT SUITE</small></span></a>
+<div class="side-caption">WORKSPACE</div>
+<nav class="side-nav">
+<a href="index.html" class="nav-link"><span>⌂</span>Overview</a>
+<a href="patients.html" class="nav-link"><span>♙</span>Patients</a>
+<a href="add-patient.html" class="nav-link"><span>＋</span>Register patient</a>
+<a href="about.html" class="nav-link"><span>✧</span>About system</a>
+</nav>
+<div class="sidebar-bottom">
+<div class="side-promo"><span class="promo-icon">✦</span><b>Care starts with clarity.</b><p>Keep patient information organized and accessible to your care team.</p><a href="patients.html">Manage records ↗</a></div>
+<div class="profile-row"><div class="profile-avatar">PC</div><div><b>Clinic Administrator</b><small>Workspace account</small></div><span class="online-dot"></span></div>
+</div>
+</aside>
+<main class="main-content">
+<header class="topbar">
+<div class="top-title"><span class="eyebrow">PATIENTCARE / CLINIC WORKSPACE</span><h1>Overview</h1></div>
+<div class="top-actions"><div class="top-search"><span>⌕</span><input id="globalSearch" placeholder="Search patient records…" aria-label="Search patient records"><kbd>⌘ K</kbd></div><button class="icon-button" id="healthStatus" title="Database status">●</button><div class="top-user"><div class="profile-avatar small">PC</div><div><b>Admin</b><small>Care team</small></div></div></div>
+</header>
+
+<section class="hero">
+ <div class="hero-overlay"></div><div class="hero-content">
+  <span class="hero-kicker"><i></i> CLINIC OPERATIONS, SIMPLIFIED</span>
+  <h2>Care better.<br><em>Stay organized.</em></h2>
+  <p>A calmer, smarter way to manage patient information. Keep records clear, find details quickly and give your team more room to focus on care.</p>
+  <div class="hero-actions"><a class="btn btn-primary" href="add-patient.html">＋ Register a patient <span>↗</span></a><a class="btn btn-glass" href="patients.html">Explore records</a></div>
+ </div>
+ <div class="hero-visual"><div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div><div class="hero-cross">✚</div><div class="hero-floating"><span class="pulse"></span><div><b>Patient records</b><small>Connected workspace</small></div><strong>LIVE</strong></div></div>
+</section>
+<section class="stats-grid">
+ <article class="stat-card"><div class="stat-head"><span>Total patients</span><span class="stat-icon mint">♙</span></div><strong id="totalPatients">—</strong><small>All registered patient records</small><div class="stat-foot"><span class="trend-dot"></span> Database overview</div></article>
+ <article class="stat-card"><div class="stat-head"><span>Average age</span><span class="stat-icon blue">⌁</span></div><strong id="averageAge">—</strong><small>Average age of registered patients</small><div class="stat-foot">Patient demographics</div></article>
+ <article class="stat-card"><div class="stat-head"><span>Male patients</span><span class="stat-icon violet">♙</span></div><strong id="malePatients">—</strong><small>Based on recorded gender</small><div class="stat-foot">Demographic snapshot</div></article>
+ <article class="stat-card"><div class="stat-head"><span>Female patients</span><span class="stat-icon peach">♙</span></div><strong id="femalePatients">—</strong><small>Based on recorded gender</small><div class="stat-foot">Demographic snapshot</div></article>
+</section>
+<section class="dashboard-grid">
+ <div class="panel recent-panel"><div class="panel-heading"><div><span class="section-kicker">LATEST ACTIVITY</span><h3>Recently registered patients</h3><p>The latest records added to your clinic workspace.</p></div><a class="inline-link" href="patients.html">View all records ↗</a></div><div id="recentPatients" class="table-wrap"><div class="loading-state">Loading patient records…</div></div></div>
+ <div class="panel actions-panel"><div class="panel-heading"><div><span class="section-kicker">QUICK ACCESS</span><h3>What would you like to do?</h3><p>Common tasks, ready when you are.</p></div></div>
+  <a class="action-tile" href="add-patient.html"><span class="action-symbol mint">＋</span><span><b>Register new patient</b><small>Create a patient record</small></span><i>↗</i></a>
+  <a class="action-tile" href="patients.html"><span class="action-symbol blue">⌕</span><span><b>Find a patient</b><small>Search and view records</small></span><i>↗</i></a>
+  <a class="action-tile" href="patients.html"><span class="action-symbol violet">✎</span><span><b>Update information</b><small>Edit existing patient details</small></span><i>↗</i></a>
+  <div class="privacy-note"><span>✧</span><p><b>Privacy reminder</b><br>Use fictional data for demos. Keep real patient information private and secure.</p></div>
+ </div>
+</section>
+<section class="lower-grid">
+ <div class="panel problem-panel"><div class="panel-heading"><div><span class="section-kicker">RECORD INSIGHTS</span><h3>Common recorded problems</h3><p>Most frequently entered problem labels.</p></div></div><div id="problemInsights" class="insight-list"><div class="loading-state">Loading insights…</div></div></div>
+ <div class="care-banner"><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1000&q=85" alt="Healthcare professional reviewing patient information"><div class="care-banner-shade"></div><div class="care-banner-copy"><span class="hero-kicker">A CLEARER CARE WORKFLOW</span><h3>Every detail<br>has a place.</h3><p>Simple tools for everyday clinic administration.</p><a href="about.html">Discover PatientCare ↗</a></div></div>
+</section>
+<footer class="footer"><span>© 2026 PatientCare · Patient Management System</span><span>Organized records. Better care.</span></footer>
+</main></div><div class="toast" id="toast" role="status"></div></body></html>

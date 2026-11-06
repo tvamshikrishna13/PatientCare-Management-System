@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patient details | PatientCare</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"><script src="js/app.js" defer></script>
+</head><body>
+<div class="app-shell">
+<aside class="sidebar">
+<a class="brand" href="index.html"><span class="brand-mark">✚</span><span>Patient<span class="brand-accent">Care</span><small>CARE MANAGEMENT SUITE</small></span></a>
+<div class="side-caption">WORKSPACE</div>
+<nav class="side-nav">
+<a href="index.html" class="nav-link"><span>⌂</span>Overview</a>
+<a href="patients.html" class="nav-link"><span>♙</span>Patients</a>
+<a href="add-patient.html" class="nav-link"><span>＋</span>Register patient</a>
+<a href="about.html" class="nav-link"><span>✧</span>About system</a>
+</nav>
+<div class="sidebar-bottom">
+<div class="side-promo"><span class="promo-icon">✦</span><b>Care starts with clarity.</b><p>Keep patient information organized and accessible to your care team.</p><a href="patients.html">Manage records ↗</a></div>
+<div class="profile-row"><div class="profile-avatar">PC</div><div><b>Clinic Administrator</b><small>Workspace account</small></div><span class="online-dot"></span></div>
+</div>
+</aside>
+<main class="main-content">
+<header class="topbar">
+<div class="top-title"><span class="eyebrow">PATIENTCARE / CLINIC WORKSPACE</span><h1>Patient details</h1></div>
+<div class="top-actions"><div class="top-search"><span>⌕</span><input id="globalSearch" placeholder="Search patient records…" aria-label="Search patient records"><kbd>⌘ K</kbd></div><button class="icon-button" id="healthStatus" title="Database status">●</button><div class="top-user"><div class="profile-avatar small">PC</div><div><b>Admin</b><small>Care team</small></div></div></div>
+</header>
+
+<section class="page-intro"><div><span class="section-kicker">PATIENT PROFILE</span><h2 id="detailTitle">Patient details</h2><p>Review the selected patient record.</p></div><a class="btn btn-soft" href="patients.html">← Back to records</a></section>
+<section class="panel details-panel"><div id="patientDetails" class="details-content"><div class="loading-state">Loading patient details…</div></div><div class="detail-actions"><a id="editPatientLink" class="btn btn-primary" href="#">Edit record ✎</a><button id="deletePatientButton" class="btn btn-danger" type="button">Delete patient</button></div></section>
+<footer class="footer"><span>© 2026 PatientCare · Patient Management System</span><span>Organized records. Better care.</span></footer>
+</main></div><div class="toast" id="toast" role="status"></div></body></html>

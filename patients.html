@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patient records | PatientCare</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"><script src="js/app.js" defer></script>
+</head><body>
+<div class="app-shell">
+<aside class="sidebar">
+<a class="brand" href="index.html"><span class="brand-mark">✚</span><span>Patient<span class="brand-accent">Care</span><small>CARE MANAGEMENT SUITE</small></span></a>
+<div class="side-caption">WORKSPACE</div>
+<nav class="side-nav">
+<a href="index.html" class="nav-link"><span>⌂</span>Overview</a>
+<a href="patients.html" class="nav-link"><span>♙</span>Patients</a>
+<a href="add-patient.html" class="nav-link"><span>＋</span>Register patient</a>
+<a href="about.html" class="nav-link"><span>✧</span>About system</a>
+</nav>
+<div class="sidebar-bottom">
+<div class="side-promo"><span class="promo-icon">✦</span><b>Care starts with clarity.</b><p>Keep patient information organized and accessible to your care team.</p><a href="patients.html">Manage records ↗</a></div>
+<div class="profile-row"><div class="profile-avatar">PC</div><div><b>Clinic Administrator</b><small>Workspace account</small></div><span class="online-dot"></span></div>
+</div>
+</aside>
+<main class="main-content">
+<header class="topbar">
+<div class="top-title"><span class="eyebrow">PATIENTCARE / CLINIC WORKSPACE</span><h1>Patient records</h1></div>
+<div class="top-actions"><div class="top-search"><span>⌕</span><input id="globalSearch" placeholder="Search patient records…" aria-label="Search patient records"><kbd>⌘ K</kbd></div><button class="icon-button" id="healthStatus" title="Database status">●</button><div class="top-user"><div class="profile-avatar small">PC</div><div><b>Admin</b><small>Care team</small></div></div></div>
+</header>
+
+<section class="page-intro"><div><span class="section-kicker">PATIENT DIRECTORY</span><h2>All patient records</h2><p>Search, review and manage the patient information stored in your database.</p></div><a class="btn btn-primary" href="add-patient.html">＋ Register patient</a></section>
+<section class="filter-panel"><div class="filter-search"><span>⌕</span><input id="patientSearch" placeholder="Search by patient name, ID, phone or problem…"></div><select id="genderFilter"><option value="all">All genders</option><option>Male</option><option>Female</option><option>Other</option></select><span id="recordCount" class="record-count">Loading records</span></section>
+<section class="panel records-panel"><div class="panel-heading"><div><span class="section-kicker">DIRECTORY</span><h3>Patient directory</h3><p>Use the actions to view, edit or remove a record.</p></div><span class="panel-icon">♙</span></div><div id="patientsTable" class="table-wrap"><div class="loading-state">Loading patient records…</div></div></section>
+<footer class="footer"><span>© 2026 PatientCare · Patient Management System</span><span>Organized records. Better care.</span></footer>
+</main></div><div class="toast" id="toast" role="status"></div></body></html>
